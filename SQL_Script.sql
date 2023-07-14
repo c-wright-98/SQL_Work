@@ -19,6 +19,6 @@ SELECT movies.title, genres.name
 
 SELECT movies.title, genres.name
     FROM movies, genres, ratings
-    WHERE genres.name = 'Comedy' AND ratings.rating = 5
+    WHERE genres.name = 'Comedy' AND ratings.rating = 5 AND ratings.movie_id = movies.id
     ORDER BY movies.title;
 
