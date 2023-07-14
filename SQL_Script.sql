@@ -2,10 +2,10 @@ mysql -u root -p
 show databases;
 use movielens;
 
--- Select titles that start with T
+-- Select titles that start with The
 SELECT title
     FROM movies
-    WHERE title LIKE 'T%'
+    WHERE title LIKE 'The%'
     ORDER BY title;
 
 -- Get list of movies and their associated genre
