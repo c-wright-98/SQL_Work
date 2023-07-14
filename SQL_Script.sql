@@ -14,10 +14,9 @@ SELECT movies.title, genres.name
     FROM movies, genres
     ORDER BY movies.title;
 
--- Still currently processing the below query,
--- the ratings table is big and my laptop is not happy
+-- Get list of comedy movies with 5 rating
 
-SELECT movies.title, genres.name
+SELECT movies.title, genres.name, ratings.rating
     FROM movies, genres, ratings
     WHERE genres.name = 'Comedy' AND ratings.rating = 5 AND ratings.movie_id = movies.id
     ORDER BY movies.title;
